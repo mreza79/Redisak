@@ -103,8 +103,19 @@ func Load(path string, m map[string]interface{}) {
 		reader := csv.NewReader(file)
 		records, _ := reader.ReadAll()
 		for _, record := range records {
-			m[record[0]] = record[1]
+			temp := strings.Split(record[0], "$")
+			key := temp[len(temp)-1]
+			num, _ := strconv.Atoi(temp[0])
+			autoIncrement = miniMax(num, autoIncrement)
+			m[key] = record[1]
 		}
 	}
 
+}
+
+func miniMax(x, y int) int {
+	if x > y {
+		return x
+	}
+	return y
 }

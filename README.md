@@ -11,6 +11,7 @@ You can set, get, and delete a key-value database on memory
 <br />query based on regex on keys
 <br />dump database onto .csv file. It will create a directory ./dumps and then create a file if not exists based on input
 <br />load .csv onto memory
+<br />For the scalability section, I split every 100 data into a section
 
 
 ## run
