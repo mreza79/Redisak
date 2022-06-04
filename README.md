@@ -3,7 +3,7 @@
 For practice, I implemented a pseudo redis in go.
 
 
-## brief description
+## Brief description
 
 You can set, get, and delete a key-value database on memory
 <br />create new database (by default its name is "default")
@@ -14,7 +14,7 @@ You can set, get, and delete a key-value database on memory
 <br />For the scalability section, I split every 100 data into a section
 
 
-## run
+## Run
 
 To run, you should run `go run main.go` in the terminal or run `go build` in the main directory and then run `./redisak` in terminal
 
