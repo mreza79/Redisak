@@ -3,7 +3,7 @@ package main
 import (
 	"bufio"
 	"fmt"
-	h "github.com/mrezaj79/redisak/handleRequests"
+	h "github.com/mreza79/redisak/handleRequests"
 	"os"
 	"strings"
 )

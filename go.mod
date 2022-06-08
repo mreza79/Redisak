@@ -1,3 +1,3 @@
-module github.com/mrezaj79/redisak
+module github.com/mreza79/redisak
 
 go 1.18
