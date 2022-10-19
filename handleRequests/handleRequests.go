@@ -13,8 +13,9 @@ import (
 var autoIncrement int
 
 //Set is a function that can be called to set key and value in database
-func Set(k string, v interface{}, m map[string]interface{}) {
+func Set(k string, v interface{}, m map[string]interface{}) interface {} {
 	m[k] = v
+	return v
 }
 
 //Get value of key in map
